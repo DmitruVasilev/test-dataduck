@@ -19,11 +19,16 @@
     }
   },
   "lint-staged": {
-    "src/**/*.{js,jsx}": [
-      "eslint --fix",
+    "**/*.js": [
+      "npm run lint-js",
+      "npm run format",
       "git add"
     ],
-    "src/**/*.sass": "stylelint"
+    "**/*.json": [
+      "npm run format",
+      "git add"
+    ],
+    "src/**/*.sass": "npm run stylelint"
   },
   "browserslist": [
     ">0.2%",
