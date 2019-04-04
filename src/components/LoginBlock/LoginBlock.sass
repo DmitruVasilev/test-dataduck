@@ -1,0 +1,34 @@
+@import "src/styles/vars"
+
+.login-block
+	min-width: 440px
+	margin-right: 92px
+
+.login-block__caption
+	font-size: 36px
+	font-weight: bold
+	color: $white
+	line-height: 48px
+	margin-bottom: 24px
+
+.login-block__list
+	display: inline-block
+	margin: 0 0 24px 0
+
+.login-block__item
+	position: relative
+	margin-bottom: 24px
+	font-size: 16px
+	color: #7A8F99
+	line-height: 24px
+	padding-left: 40px
+	&:after
+		content: ''
+		display: inline-block
+		position: absolute
+		left: 0
+		top: 50%
+		margin-top: -7px
+		width: 18px
+		height: 14px
+		background: url("check.png") no-repeat
