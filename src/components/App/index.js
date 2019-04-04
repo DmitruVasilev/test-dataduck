@@ -1,6 +1,12 @@
 import React from 'react';
-import "./App.sass";
+import Header from '../Header';
 
-const App = () => <h2>Test</h2>;
+const App = () => {
+  return (
+    <div className='container'>
+      <Header />
+    </div>
+  )
+};
 
 export default App;
