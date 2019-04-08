@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/DmitruVasilev/test-dataduck/precache-manifest.d4e14b738810f1f4c70015d3b42272dd.js"
+  "/test-dataduck/precache-manifest.2608f645f1d6069d5692e5b685abe966.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/DmitruVasilev/test-dataduck/index.html", {
+workbox.routing.registerNavigationRoute("/test-dataduck/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
