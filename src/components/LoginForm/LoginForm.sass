@@ -1,2 +1,192 @@
 @import "src/styles/vars"
 
+.login-form__input-label
+	position: relative
+	display: flex
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active
+	-webkit-box-shadow: 0 0 0 50px $primary inset
+	-webkit-text-fill-color: $text-light
+
+.login-form__input
+	display: block
+	width: 100%
+	padding: 30px 24px 8px 24px
+	margin-bottom: 16px
+	border-radius: 4px
+	background-color: $primary
+	font-size: 16px
+	line-height: 24px
+	color: $text-light
+	outline: none
+	box-shadow: none
+	border: 1px solid $primary
+	&.login-form__input--success
+		border: 1px solid $success
+	&:focus
+		border: 1px solid $success
+	&:focus + .login-form__placeholder
+		top: 12px
+		font-size: 12px
+		line-height: 16px
+
+
+.login-form__placeholder
+	position: absolute
+	display: inline-block
+	left: 24px
+	top: 20px
+	color: $text
+	font-size: 16px
+	line-height: 24px
+	transition: $base-transition
+	&.login-form__placeholder--small
+		top: 12px
+		font-size: 12px
+		line-height: 16px
+
+.login-form__error-wrap
+	position: absolute
+	left: 0
+	top: -50px
+	width: 100%
+	text-align: center
+	&:after
+		content: ''
+		position: absolute
+		left: 50%
+		margin-left: -4px
+		bottom: -16px
+		border: 9px solid transparent
+		border-top: 10px solid $danger
+
+.login-form__error
+	display: inline-block
+	padding: 8px 10px
+	min-width: 300px
+	font-size: 16px
+	line-height: 24px
+	color: $text-light
+	background: $danger
+	border-radius: 4px
+
+.login-form__radio-block
+	display: flex
+	margin-bottom: 24px
+
+.login-form__title
+	font-size: 12px
+	line-height: 16px
+	color: $text
+	margin-right: 16px
+	max-width: 128px
+
+.login-form__radio-label
+	display: flex
+	justify-content: center
+	align-items: center
+
+.login-form__input-radio
+	display: none
+
+.login-form__radio-btn
+	position: relative
+	padding: 8px 44px
+	color: $text
+	border: 1px solid $primary
+	font-size: 16px
+	font-weight: bold
+	background-color: $primary
+	cursor: pointer
+	transition: $base-transition
+	&:hover, &:focus
+		background-color: rgba($primary, .7)
+	&:after
+		content: ''
+		position: absolute
+		right: -1px
+		bottom: 50%
+		margin-bottom: -13px
+		width: 1px
+		height: 26px
+		background-color: #152236
+	&.login-form__radio-btn--border-left
+		border-top-left-radius: 4px
+		border-bottom-left-radius: 4px
+	&.login-form__radio-btn--border-right
+		border-top-right-radius: 4px
+		border-bottom-right-radius: 4px
+	&.login-form__radio-btn--active
+		border: 1px solid $success
+		background-color: $background
+		color: $text-light
+		&:after
+			display: none
+	&.login-form__radio-btn--no-after:after
+		display: none
+
+.login-form__checkbox-label
+	position: relative
+	display: flex
+	margin-bottom: 24px
+	cursor: pointer
+
+.login-form__checkbox-input
+	display: none
+
+.login-form__checkbox
+	display: inline-block
+	min-width: 31px
+	min-height: 31px
+	margin-right: 16px
+	border-radius: 4px
+	border: 1px solid $primary
+	background: $primary
+	&.login-form__checkbox--active
+		border: 1px solid $success
+		background: $background url("./check.png") no-repeat center center
+
+.login-form__checkbox-title
+	font-size: 12px
+	line-height: 16px
+	color: $text
+
+.login-form__submit
+	width: 100%
+	padding: 16px 0
+	cursor: pointer
+	font-size: 16px
+	line-height: 24px
+	color: $text-light
+	font-weight: bold
+	outline: none
+	background: $success
+	border-radius: 4px
+	border: none
+	transition: $base-transition
+	&:hover, &:focus
+		background: rgba($success, .7)
+
+.login-form__email-error
+	position: relative
+	padding: 8px 24px 8px 64px
+	margin-bottom: 16px
+	font-size: 16px
+	font-weight: 500
+	color: $text-light
+	line-height: 24px
+	border-radius: 4px
+	background: $danger
+	&:after
+		content: ''
+		position: absolute
+		left: 24px
+		top: 50%
+		margin-top: -8.5px
+		min-width: 17px
+		height: 17px
+		background: url("./attention.png") no-repeat center
+

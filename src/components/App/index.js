@@ -1,18 +1,18 @@
-import React from 'react';
-import Header from '../Header';
-import LoginBlock from '../LoginBlock';
-import ImageBlock from '../ImageBlock';
+import React from "react";
+import Header from "../Header";
+import LoginBlock from "../LoginBlock";
+import ImageBlock from "../ImageBlock";
 
 const App = () => {
   return (
-    <div className='container'>
+    <div className="container">
       <Header />
-      <div className='row'>
+      <div className="row">
         <LoginBlock />
         <ImageBlock />
       </div>
     </div>
-  )
+  );
 };
 
 export default App;

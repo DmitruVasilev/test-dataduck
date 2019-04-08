@@ -1,6 +1,10 @@
-import React from 'react';
-import './Logo.sass';
+import React from "react";
+import "./Logo.sass";
 
-const Logo = () => <span className='logo' />
+const Logo = () => (
+  <a href="/">
+    <span className="logo" />
+  </a>
+);
 
-export default Logo
+export default Logo;
