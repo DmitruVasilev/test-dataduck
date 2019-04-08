@@ -1,0 +1,30 @@
+@import "src/styles/vars"
+@import "src/styles/media"
+
+.signInBtn
+	display: flex
+	align-items: center
+	margin: 12px 0
+	padding: 7px 21px
+	background-color: transparent
+	color: $white
+	font-family: $base-ff
+	line-height: 24px
+	font-weight: bold
+	border: 1px solid $border-color
+	border-radius: 4px
+	cursor: pointer
+	transition: $base-transition
+	@include xs
+		padding: 6px 18px
+		font-size: 14px
+		line-height: 18px
+	&:before
+		content: ''
+		display: inline-block
+		width: 24px
+		height: 24px
+		margin-right: 5px
+		background: url("user.svg") no-repeat
+	&:hover, &:focus
+		background: $primary
