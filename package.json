@@ -2,6 +2,7 @@
   "name": "dataduck",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://github.com/DmitruVasilev/test-dataduck",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -38,6 +39,7 @@
   ],
   "dependencies": {
     "classnames": "^2.2.6",
+    "gh-pages": "^2.0.1",
     "node-sass": "^4.11.0",
     "normalize.css": "^8.0.1",
     "prop-types": "^15.7.2",
