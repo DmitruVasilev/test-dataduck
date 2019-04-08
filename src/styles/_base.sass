@@ -1,4 +1,5 @@
 @import "./vars"
+@import "./media"
 
 *, *::before, *::after
 	box-sizing: border-box
@@ -26,12 +27,18 @@ ul
 
 .container
 	max-width: 1440px
-	padding-right: 100px
-	padding-left:  100px
-	margin-right: auto
-	margin-left:  auto
+	padding: 0 100px
+	margin: 0 auto
+	@include lg
+		padding: 0 60px
+	@include sm
+		padding: 0 30px
+	@include xs
+		padding: 0 20px
 
 .row
 	display: flex
 	margin-bottom: 100px
+	@include lg
+		margin-bottom: 40px
 

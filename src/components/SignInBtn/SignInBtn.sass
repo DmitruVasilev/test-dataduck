@@ -1,4 +1,5 @@
 @import "src/styles/vars"
+@import "src/styles/media"
 
 .signInBtn
 	display: flex
@@ -14,6 +15,10 @@
 	border-radius: 4px
 	cursor: pointer
 	transition: $base-transition
+	@include xs
+		padding: 6px 18px
+		font-size: 14px
+		line-height: 18px
 	&:before
 		content: ''
 		display: inline-block

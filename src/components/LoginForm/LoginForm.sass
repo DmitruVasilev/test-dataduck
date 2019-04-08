@@ -1,4 +1,5 @@
 @import "src/styles/vars"
+@import "src/styles/media"
 
 .login-form__input-label
 	position: relative
@@ -72,10 +73,14 @@ input:-webkit-autofill:active
 	color: $text-light
 	background: $danger
 	border-radius: 4px
+	@include xs
+		min-width: 250px
 
 .login-form__radio-block
 	display: flex
 	margin-bottom: 24px
+	@include sm
+		flex-wrap: wrap
 
 .login-form__title
 	font-size: 12px
@@ -83,6 +88,10 @@ input:-webkit-autofill:active
 	color: $text
 	margin-right: 16px
 	max-width: 128px
+	@include sm
+		width: 100%
+		max-width: 100%
+		margin-bottom: 5px
 
 .login-form__radio-label
 	display: flex
@@ -102,6 +111,8 @@ input:-webkit-autofill:active
 	background-color: $primary
 	cursor: pointer
 	transition: $base-transition
+	@include xs
+		padding: 8px 40px
 	&:hover, &:focus
 		background-color: rgba($primary, .7)
 	&:after
@@ -131,6 +142,7 @@ input:-webkit-autofill:active
 .login-form__checkbox-label
 	position: relative
 	display: flex
+	align-items: center
 	margin-bottom: 24px
 	cursor: pointer
 
